@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>VidaPlus - Agendar Consulta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Agendar Consulta</h1></header>
+  <div class="container">
+    <label>Especialidade</label>
+    <select>
+      <option>Clínico Geral</option>
+      <option>Pediatria</option>
+      <option>Cardiologia</option>
+    </select>
+
+    <label style="margin-top:8px">Médico</label>
+    <select>
+      <option>Dr. João Silva (Clínico Geral)</option>
+      <option>Dra. Maria Costa (Pediatria)</option>
+      <option>Dr. Pedro Almeida (Cardiologia)</option>
+    </select>
+
+    <h3 style="margin-top:12px">Horários</h3>
+    <div>
+      <button class="btn alt" onclick="escolherHorario('08:00')">08:00</button>
+      <button class="btn alt" onclick="escolherHorario('09:00')">09:00</button>
+      <button class="btn alt" onclick="escolherHorario('10:00')">10:00</button>
+      <button class="btn alt" onclick="escolherHorario('14:00')">14:00</button>
+      <button class="btn alt" onclick="escolherHorario('16:00')">16:00</button>
+    </div>
+
+    <p style="margin-top:8px"><b>Selecionado:</b> <span id="horario">--</span></p>
+    <div style="margin-top:10px">
+      <button class="btn" onclick="confirmarAgendamento()">Confirmar</button>
+      <a class="btn alt" href="painel_paciente.html">Cancelar</a>
+    </div>
+    <p class="small">Fluxo simples, sem salvar dados (apenas simulação).</p>
+  </div>
+  <footer>© VidaPlus - Agendamento</footer>
+  <script src="script.js"></script>
+</body>
+</html>

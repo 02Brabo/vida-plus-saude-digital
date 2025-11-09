@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>VidaPlus - Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>VidaPlus Saúde Digital - Login</h1></header>
+  <div class="container">
+    <p class="small">Protótipo simples para fins acadêmicos (Front-end).</p>
+    <label>CPF</label>
+    <input id="cpf" placeholder="000.000.000-00">
+    <label>Senha</label>
+    <input id="senha" type="password" placeholder="********">
+    <label>Perfil (simulado)</label>
+    <select id="perfil">
+      <option value="paciente">Paciente</option>
+      <option value="medico">Médico</option>
+    </select>
+    <div style="margin-top:10px">
+      <button class="btn" onclick="entrar()">Entrar</button>
+    </div>
+    <p class="small">Dados não são salvos. Apenas simulação de telas.</p>
+  </div>
+  <footer>© VidaPlus - Protótipo Estudante</footer>
+  <script src="script.js"></script>
+</body>
+</html>
